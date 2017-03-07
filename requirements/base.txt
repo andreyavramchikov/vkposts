@@ -1,0 +1,9 @@
+# All common dependencies go here
+
+Django
+MySQL-Python
+Pillow
+ipython
+unicode-slugify
+django-extensions
+python-memcached
