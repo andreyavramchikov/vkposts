@@ -5,7 +5,7 @@ from contextlib import contextmanager
 def live():
     env.hosts = ['54.202.70.27']
     env.user = 'ubuntu'
-    # env.cwd = '/var/www/project/buildout'
+    env.cwd = '/home/ubuntu'
     env.project = 'vkposts'
 
 
@@ -15,10 +15,10 @@ def deploy():
 
 
 def initial():
-    setup_directories()
-    # clone_repo()
-    # install_virtualenv()
-    # install_requirements()
+    # setup_directories()
+    clone_repo()
+    install_virtualenv()
+    install_requirements()
     # create_nginx_config_symblink()
     # activate_uwsgi_ini()
 

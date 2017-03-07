@@ -14,16 +14,16 @@ server {
 
     # media files
     location /media  {
-        alias /var/www/project/buildout/vkposts/media;
+        alias /home/ubuntu/vkposts/media;
     }
 
     location /static {
-        alias /var/www/project/buildout/vkposts/static;
+        alias /home/ubuntu/vkposts/static;
     }
 
     # other queries go to Django app
     location / {
         uwsgi_pass  django;
-        include     /var/www/project/buildout/vkposts/uwsgi_params; # file uwsgi_params
+        include     /home/ubuntu/vkposts/uwsgi_params; # file uwsgi_params
     }
 }
