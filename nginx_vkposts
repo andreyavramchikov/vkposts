@@ -6,7 +6,7 @@ upstream django {
 server {
     # port for listening web server, waiting for requests from users
     listen      80;
-    server_name  localhost;
+    server_name  54.218.2.37;
     charset     utf-8;
 
     # max size of data loading to the server
